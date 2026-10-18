@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(23, 28, 34);
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            box-sizing: border-box;
+            font-style: italic;
+            font-variant: jis78;
+
+        }
+
+        .box1 {
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+            gap: 20px;
+        }
+
+        .box2 {
+            color: rgb(64, 217, 192);
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 2px;
+        }
+
+        .box3 {
+            font-style: oblique;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .box4 {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .h9 {
+            border: none;
+            border-top: 1px solid rgb(57, 67, 75);
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .box7 {
+            color: rgb(61, 204, 180);
+            font-size: 12px;
+            margin-top: 40px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .box8 {
+            font-size: 42px;
+            line-height: 1.1;
+            font-weight: 700;
+            margin-left: 20px;
+        }
+
+        .box9 {
+            font-size: 42px;
+            line-height: 1.1;
+            font-weight: 700;
+            margin-left: 20px;
+            color: rgb(212, 243, 106);
+        }
+
+        .box10 {
+            margin-left: 20px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .box11 {
+            display: flex;
+
+            margin-left: 20px;
+        }
+
+        .sp3 {
+
+
+            border-radius: 15px;
+            border: 1px solid rgb(212, 243, 106);
+            background-color: rgb(212, 243, 106);
+            margin-right: 10px;
+            padding: 10px;
+            color: black;
+
+
+        }
+
+        .sp4 {
+            border-radius: 15px;
+            border: 1px solid rgb(64, 216, 191);
+            background-color: rgb(64, 216, 191);
+
+            margin-right: 10px;
+            padding: 10px;
+            color: black;
+        }
+
+        .box12 {
+            margin-top: 30px;
+            margin-right: 20px;
+            margin-left: 20px;
+            border: 1px solid rgb(115, 135, 151);
+            background-color: rgb(34, 42, 50);
+            width: auto;
+            box-sizing: border-box;
+            height: auto;
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+
+        .box13 {
+            margin-bottom: 25px;
+            background-color: rgb(34, 42, 50);
+            font-size: 15px;
+            color: rgb(64, 217, 192);
+        }
+
+        .box14 {
+            font-size: 28px;
+            background-color: rgb(34, 42, 50);
+            margin-bottom: 10px;
+            color: rgb(212, 243, 106);
+            font-weight: 600;
+        }
+
+        .box15 {
+            display: flex;
+            background-color: rgb(34, 42, 50);
+
+        }
+
+        .sp5 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+            margin-right: 10px;
+
+        }
+
+        .sp6 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+            margin-right: 10px;
+
+        }
+
+        .sp7 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+            margin-right: 10px;
+
+        }
+
+        .sp8 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+
+        }
+
+        .h10 {
+            margin-top: 20px;
+            border: none;
+            border-top: 1px solid rgb(212, 243, 106);
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+
+        .di1 {
+            margin-left: 10px;
+            font-size: 35px;
+            font-weight: 500;
+            color: rgb(64, 217, 192);
+        }
+
+        .box17 {
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 35px;
+
+        }
+
+        .box16>p {
+            font-size: 17px;
+            line-height: 2.1;
+            margin-left: 30px;
+        }
+
+        .box18 {
+            border: 1px solid rgb(34, 42, 50);
+            background-color: rgb(34, 42, 50);
+            border-radius: 10px;
+            padding: 10px;
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+            height: auto;
+        }
+
+        .box19 {
+            font-weight: 500;
+            font-size: 22px;
+            padding-top: 10px;
+            color: rgb(212, 243, 106);
+            font-weight: 600;
+            background-color: rgb(34, 42, 50);
+        }
+
+        .box20 {
+            background-color: rgb(34, 42, 50);
+            color: rgb(64, 217, 192);
+        }
+
+        .h20 {
+            margin-top: 20px;
+            border: none;
+            border-top: 1px solid rgb(212, 243, 106);
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+
+        .di28 {
+            font-size: 35px;
+            color: rgb(64, 217, 192);
+            margin-left: 10px;
+            font-weight: 500;
+        }
+
+        .box22 {
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 35px;
+        }
+
+        .box23 {
+            font-size: 17px;
+            line-height: 2.1;
+            margin-left: 30px;
+        }
+
+        .box25 {
+            border: 1px solid rgb(34, 42, 50);
+            background-color: rgb(34, 42, 50);
+            border-radius: 10px;
+            padding: 10px;
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+            height: auto;
+        }
+
+        .box26 {
+            font-weight: 500;
+            font-size: 22px;
+            padding-top: 10px;
+            color: rgb(212, 243, 106);
+            font-weight: 600;
+            background-color: rgb(34, 42, 50);
+        }
+
+        .box27 {
+            background-color: rgb(34, 42, 50);
+            color: rgb(64, 217, 192);
+        }
+
+        .box28 {
+            display: flex;
+            background-color: rgb(34, 42, 50);
+            margin-top: 10px;
+        }
+
+        .sp41 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+            margin-left: 10px;
+        }
+
+        .sp40 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+
+        }
+
+        .box29 {
+            border: 1px solid rgb(34, 42, 50);
+            background-color: rgb(34, 42, 50);
+            border-radius: 10px;
+            padding: 10px;
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .box30 {
+            font-weight: 500;
+            font-size: 22px;
+            padding-top: 10px;
+            color: rgb(212, 243, 106);
+            font-weight: 600;
+            background-color: rgb(34, 42, 50);
+        }
+
+        .p40 {
+            background-color: rgb(34, 42, 50);
+            color: rgb(64, 217, 192);
+        }
+
+        .p41 {
+            background-color: rgb(34, 42, 50);
+            color: rgb(212, 243, 106);
+            padding-top: 10px;
+        }
+
+        .h100 {
+            margin-top: 20px;
+            border: none;
+            border-top: 1px solid rgb(212, 243, 106);
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+
+        .ex1 {
+            font-size: 35px;
+            color: rgb(64, 217, 192);
+            margin-left: 10px;
+            font-weight: 500;
+        }
+
+        .box32 {
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 35px;
+        }
+
+        .box33 {
+            font-size: 17px;
+            line-height: 2.1;
+            margin-left: 30px;
+        }
+
+        .box34 {
+            display: flex;
+            background-color: 171c22;
+            margin-top: 10px;
+        }
+
+        .sp45 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+            margin-left: 30px;
+            margin-right: 10px;
+        }
+
+        .sp46 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+            margin-right: 10px;
+
+        }
+
+        .sp47 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+            margin-right: 10px;
+        }
+
+        .sp48 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+            margin-right: 10px;
+        }
+
+        .sp49 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+            margin-right: 10px;
+        }
+
+        .sp50 {
+            border-radius: 10px;
+            border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(48, 58, 69);
+            padding: 10px;
+            color: rgb(64, 217, 192);
+
+        }
+        .h200 {
+             margin-top: 20px;
+            border: none;
+            border-top: 1px solid rgb(212, 243, 106);
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+        .box35 {
+            font-size: 35px;
+            color: rgb(64, 217, 192);
+            margin-left: 10px;
+            font-weight: 500;
+        }
+        .box36 {
+             margin-left: 20px;
+            font-weight: 600;
+            font-size: 35px;
+           
+        }
+        .box37 {
+             font-size: 17px;
+            line-height: 2.1;
+            margin-left: 30px;
+        }
+        .di100 ul{
+            list-style-type: disc; 
+           padding-left: 40px;
+         
+        }
+        .di100 li {
+            display: list-item;
+             padding-left: 20px;
+             padding-top:10px;
+        }
+        .di100 ul li:nth-child(1)::marker {
+            color:rgb(64, 217, 192);
+            font-size: 1.8rem;
+        }
+        .di100 ul li:nth-child(2)::marker {
+            color:rgb(212, 243, 106);
+            font-size: 1.8rem;
+        }
+        .di100 ul li:nth-child(3)::marker {
+            color:rgb(64, 217, 192);
+            font-size: 1.8rem;
+        }
+        .box38 {
+             border: 1px solid rgb(64, 217, 192);
+            background-color: rgb(64, 217, 192);
+            border-radius: 10px;
+            padding: 10px;
+            width: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+            height: auto;
+            margin-top: 10px;
+        }
+        .box39 {
+            font-weight: 20;
+            font-size: 18px;
+            padding-top: 10px;
+            color: black;
+            font-weight: 600;
+            background-color: rgb(64, 217, 192);
+            
+        }
+        .box40 {
+            font-weight: 500;
+            font-size: 30px;
+            padding-top: 10px;
+            color: black;
+            font-weight: 600;;
+            background-color:rgb(64, 217, 192); 
+
+        }
+        .box41 {
+            background-color:rgb(64, 217, 192);
+            color: black;
+        }
+        .box42 {
+             border: 1px solid black;
+            background-color: black;
+            border-radius: 10px;
+            padding: 10px;
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+            height: auto;
+            margin-top: 10px;
+           display: flex;
+           justify-content: center;
+            align-items: center;
+            color:rgb(64, 217, 192);
+        }
+        .box43 {
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 22px;
+            color :rgb(212, 243, 106);
+        }
+        .box44 {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">PARV JAIN</div>
+        <div class="box3">STUDENT · CREATOR · LEARNER</div>
+        <div class="box4">
+            <span>Home</span>
+            <span>About</span>
+            <span>Work</span>
+        </div>
+
+    </div>
+    <hr class="h9">
+    <div class="box6">
+        <div class="box7">CSE STUDENT / ASPIRING DEVELOPER</div>
+        <div class="box8">Learning to build.</div>
+        <div class="box9">Building to learn.</div>
+        <div class="box10">I explore programming, design, and web development, one project at a time.</div>
+        <div class="box11">
+            <span class="sp3">Explore work ↗</span>
+            <span class="sp4">My journey</span>
+        </div>
+    </div>
+    <div class="box12">
+        <div class="box13">CURRENTLY LEARNING</div>
+        <div class="box14">My developer toolkit</div>
+        <div class="box15">
+            <span class="sp5">HTML</span>
+            <span class="sp6">CSS</span>
+            <span class="sp7">C++</span>
+            <span class="sp8">DSA</span>
+        </div>
+    </div>
+    <hr class="h10">
+    <div class="box16">
+        <div class="di1">01.</div>
+        <div class="box17">Who I am?</div>
+        <p>I'm a computer science student interested in technology, problem-solving, and creating useful things for the
+            web.
+            Right now, I'm strengthening my fundamentals and learning by building small projects.</p>
+        <div class="box18">
+            <div class="box19">MY APPROACH</div>
+            <div class="box20">Stay curious. Keep practising. Improve with every project.</div>
+        </div>
+    </div>
+    <hr class="h20">
+    <div class="box21">
+        <div class="di28">02.</div>
+        <div class="box22">Selected projects</div>
+        <div class="box23">Small beginnings, with room to grow.</div>
+        <div class="box24">
+            <div class="box25">
+                <div class="box26">01 / Personal portfolio</div>
+                <p class="box27">A personal website to introduce myself, showcase my work, and practise layout design.
+                </p>
+
+                <div class="box28">
+                    <span class="sp40">HTML</span>
+                    <span class="sp41">CSS</span>
+                </div>
+            </div>
+            <div class="box29">
+                <div class="box30">02 / Next experiment</div>
+                <p class="p40">A future mini-project where I'll explore new layouts and improve my coding skills.</p>
+                <p class="p41">CURRENTLY PLANNING</p>
+            </div>
+        </div>
+    </div>
+    <hr class="h100">
+    <div class="box31">
+        <div class="ex1">03.</div>
+        <div class="box32">My toolkit</div>
+        <p class="box33">Technologies and skills I'm developing.</p>
+        <div class="box34">
+            <span class="sp45">HTML</span>
+            <span class="sp46">CSS</span>
+            <span class="sp47">C++</span>
+            <span class="sp48">Problem solving</span>
+            <span class="sp49">Responsive design</span>
+            <span class="sp50">Creative thinking</span>
+        </div>
+    </div>
+    <hr class="h200">
+    <div class="box35">04.</div>
+    <div class="box36">What's next?</div>
+    <p class="box37">My learning roadmap is simple:</p>
+    <div class="di100">
+        <ul>
+            <li>
+                <h2>Build strong fundamentals</h2>
+            <p>Practise programming and understand the basics properly.</p>
+            </li>
+              <li>
+                <h2>Create more projects</h2>
+            <p>Turn what I learn into working websites and applications</p>
+            </li>
+            <li>
+                <h2>Keep improving</h2>
+            <p>Learn from mistakes and take on more challenging ideas</p>
+            </li>
+        </ul>
+    </div>
+    <div class="box38">
+        <p class="box39">HAVE AN IDEA OR WANT TO CONNECT?</p>
+        <h1 class="box40">Let's talk.</h1>
+        <p class="box41">I'm always open to learning, sharing ideas, and meeting creative people</p>
+        <div class="box42">Email me ↗</div>
+    </div>
+    <div class="box43">PARV JAIN</div>
+    <div class="box44">ROLL NO-12611082</div>
+
+</body>
+
+</html>
